@@ -84,7 +84,7 @@ build_options = {
         "cura",
         "stl",
         "Savitar",
-        "PyQt5.QtDBus",
+        "PyQt5.QtDBus"
     ],
     "include_files": [
         ("@EXTERNALPROJECT_INSTALL_PREFIX@/bin/CuraEngine.exe", ""),
@@ -98,6 +98,7 @@ build_options = {
         (PyQt5.__path__[0] + "/Qt/qml/QtQml", "qml/QtQml"),
         (PyQt5.__path__[0] + "/Qt/qml/QtQuick", "qml/QtQuick"),
         (PyQt5.__path__[0] + "/Qt/qml/QtQuick.2", "qml/QtQuick.2"),
+		(PyQt5.__path__[0] + "/Qt/qml/QtGraphicalEffects", "qml/QtGraphicalEffects"),
     ],
     "excludes": [ ]
 }

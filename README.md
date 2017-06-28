@@ -83,10 +83,14 @@ cd cura-build
 mkdir build
 cd build
 ..\env_win64.bat
-cmake -G "MinGW Makefiles" -DBUILD_64BIT:BOOL=ON ..
+cmake -G "MinGW Makefiles" -DBUILD_64BIT:BOOL=ON -DSIGN_PACKAGE:BOOL=OFF ..
 mingw32-make
 mingw32-make package
 ```
+
+Skopiowac wygenerowany przez cura-build-env stuff do build/inst
+cmake -G "MinGW Makefiles" -DBUILD_64BIT:BOOL=ON -DSIGN_PACKAGE:BOOL=OFF -DCMAKE_PREFIX_PATH="C:\Users\SoftInt_Kamil\Desktop\3DGence_build\cura-build\build\inst" ..
+https://212.106.159.105:81/svn/3D_Gen
 
 Before make package - copy arduino to cura-build/
 
